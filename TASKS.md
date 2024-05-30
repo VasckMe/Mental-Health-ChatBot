@@ -1,17 +1,16 @@
 > [!NOTE]
 > Here you can find tasks list
 
-- [ ] [000] Create tasks list file [x]
+- [ ] [000] Create tasks list file
 - [ ] [001] Write in README commit rules
 - [ ] [002] Write in README branch rules
-- [ ] [003] Write in README edit rules
-- [ ] [004] Add dependencies for frameworks 
-- [ ] [005] Implement function to read json dataset with given dataset name
-- [ ] [006] Add logic with to divide dataset text into words, classes and documents
-- [ ] [007] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
-- [ ] [008] Make binary code from input dataset data
-- [ ] [009] Write code for creating instance (model) with Sequential and configure it
-- [ ] [010] Compile and save ML Model. Add print in the end of the code to show the end of the compiling
+- [ ] [003] Add dependencies for frameworks 
+- [ ] [004] Implement function to read json dataset with given dataset name
+- [ ] [005] Add logic with to divide dataset text into words, classes and documents
+- [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
+- [ ] [007] Make binary code from input dataset data
+- [ ] [008] Write code for creating instance (model) with Sequential and configure it
+- [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the compiling
 
 > [!TIP]
 > If you need to add, edit or remove task, here is the examples
