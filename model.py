@@ -16,6 +16,11 @@ from nltk.stem import WordNetLemmatizer
 # [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 
 # [007] Make binary code from input dataset data
+addiction_service.convert_into_binary(variables.documents)
+  
+# split the data 
+train_x = list(variables.training[:, 0]) 
+train_y = list(variables.training[:, 1]) 
 
 # [008] Write code for creating instance (model) with Sequential and configure it
 
