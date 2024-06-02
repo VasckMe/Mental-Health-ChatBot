@@ -7,9 +7,9 @@
 - [ ] [002a] Add in README: Installation, project information, technologies, ...
 - [x] [003] Add dataset, add dependencies for frameworks, addarchitecture folders and files
 - [ ] [004] Implement function to read json dataset with given dataset name
-- [ ] [005] Add logic with to divide dataset text into words, classes and documents
+- [x] [005] Add logic with to divide dataset text into words, classes and documents
 - [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
-- [ ] [007] Make binary code from input dataset data
+- [x] [007] Make binary code from input dataset data
 - [ ] [008] Write code for creating instance (model) with Sequential and configure it
 - [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
 compiling
