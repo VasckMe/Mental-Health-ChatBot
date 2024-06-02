@@ -4,6 +4,19 @@ import nltk
 import numpy as np 
 import random
 
+def fillListsWithData(data_list):
+    for intent in data_list['intents']: 
+        for pattern in intent['patterns']: 
+            word_list = nltk.word_tokenize(pattern) # separate words in pattern, make list from them
+            variables.words.extend(word_list) # add list into words array
+            
+            # associate patterns with respective tags 
+            variables.documents.append(((word_list), intent['tag'])) 
+    
+            # append the tags to the class list 
+            if intent['tag'] not in variables.classes: 
+                variables.classes.append(intent['tag']) 
+
 def convert_into_binary(documents):
     output_empty = [0]*len(variables.classes) 
     lemmatizer = nltk.stem.WordNetLemmatizer() 

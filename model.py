@@ -9,9 +9,20 @@ import services.pickle_service as pickle_service
 import services.ml_model_service as model_service
 from nltk.stem import WordNetLemmatizer
 
+lemmatizer = WordNetLemmatizer() 
+
 # [004] Implement function to read json dataset with given dataset name
 
 # [005] Add logic with to divide dataset text into words, classes and documents
+
+addiction_service.fillListsWithData(intents)
+  
+# store root words or lemma + sort
+variables.words = [
+    lemmatizer.lemmatize(variables.word) 
+    for variables.word in variables.words if variables.word not in variables.ignore_letters
+    ] 
+variables.words = sorted(set(variables.words)) 
 
 # [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 
