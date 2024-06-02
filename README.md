@@ -2,7 +2,6 @@
 
 ## Commit rules
 ```
-
 1. Commit title is necessary to fill
 2. Commit title must has:
     - code of the project (MH)
