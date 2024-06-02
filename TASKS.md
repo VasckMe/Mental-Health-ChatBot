@@ -4,7 +4,7 @@
 - [ ] [000] Create tasks list file
 - [x] [001] Write in README commit rules
 - [x] [002] Write in README branch rules
-- [ ] [003] Add dependencies for frameworks + architecture folders and files
+- [ ] [003] Add dataset, add dependencies for frameworks, addarchitecture folders and files
 - [ ] [004] Implement function to read json dataset with given dataset name
 - [ ] [005] Add logic with to divide dataset text into words, classes and documents
 - [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
@@ -13,6 +13,12 @@
 - [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
 compiling
 - [ ] [010] Extend dataset
+- [ ] [011] Load saved intents, words, classes and ML Model
+- [ ] [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
+- [ ] [013] Write predict function
+- [ ] [014] Write function for getting response
+- [ ] [015] Write function to make infinite chatting
+- [ ] [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
 
 > [!TIP]
 > If you need to add, edit or remove task, here is the examples
