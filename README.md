@@ -2,7 +2,7 @@
 
 ## Branch rules
 ```
-1. Don't try to remove "main" or "develop" branches
+1. Don't remove "main" or "develop" branches
 2. Branch title must has:
     - code of the project
     - task number
