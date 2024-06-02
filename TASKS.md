@@ -10,7 +10,9 @@
 - [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 - [ ] [007] Make binary code from input dataset data
 - [ ] [008] Write code for creating instance (model) with Sequential and configure it
-- [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the compiling
+- [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
+compiling
+- [ ] [010] Extend dataset
 
 > [!TIP]
 > If you need to add, edit or remove task, here is the examples
