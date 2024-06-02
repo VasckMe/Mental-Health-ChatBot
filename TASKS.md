@@ -4,7 +4,7 @@
 - [ ] [000] Create tasks list file
 - [ ] [001] Write in README commit rules
 - [ ] [002] Write in README branch rules
-- [ ] [003] Add dependencies for frameworks 
+- [ ] [003] Add dependencies for frameworks + architecture folders and files
 - [ ] [004] Implement function to read json dataset with given dataset name
 - [ ] [005] Add logic with to divide dataset text into words, classes and documents
 - [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
