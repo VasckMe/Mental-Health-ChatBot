@@ -51,3 +51,13 @@ def predict(model, input_message, classes_list, words_list):
         ) 
         return return_list
 
+# get model response
+def get_response(intents_list, intents_json): 
+    tag = intents_list[0]['intent'] 
+    list_of_intents = intents_json['intents'] 
+    result = "" 
+    for intent in list_of_intents: 
+        if intent['tag'] == tag: 
+            result = random.choice(intent['responses'])   
+            break
+    return result 
