@@ -35,3 +35,15 @@ def convert_into_binary(documents):
     
     random.shuffle(variables.training) 
     variables.training = np.array(variables.training, dtype="object")
+
+# function for lemmatizing words from sentence (looking for root word)
+def clean_up_sentences(sentence): 
+    lemmatizer = nltk.stem.WordNetLemmatizer() 
+
+    sentence_words = nltk.word_tokenize(sentence) 
+    sentence_words = [
+        lemmatizer.lemmatize(word)  
+        for word in sentence_words
+        ] 
+    return sentence_words
+
