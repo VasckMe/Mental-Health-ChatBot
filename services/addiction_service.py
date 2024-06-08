@@ -35,3 +35,27 @@ def convert_into_binary(documents):
     
     random.shuffle(variables.training) 
     variables.training = np.array(variables.training, dtype="object")
+
+# function for lemmatizing words from sentence (looking for root word)
+def clean_up_sentences(sentence): 
+    lemmatizer = nltk.stem.WordNetLemmatizer() 
+
+    sentence_words = nltk.word_tokenize(sentence) 
+    sentence_words = [
+        lemmatizer.lemmatize(word)  
+        for word in sentence_words
+        ] 
+    return sentence_words
+
+# function for converting data into numerical format
+def init_binary_list_with_presented_words(sentence, words): 
+    # separate out words from the input sentence 
+    sentence_words = clean_up_sentences(sentence) 
+    bag = [0]*len(words) 
+    for w in sentence_words: 
+        for i, word in enumerate(words): 
+            if word == w: # is word present in input?
+                bag[i] = 1 # if present, put 1 instead of 0
+  
+    # return a numpy array 
+    return np.array(bag)
