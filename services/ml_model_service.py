@@ -26,4 +26,28 @@ def compile(model):
         loss='categorical_crossentropy', 
 		optimizer=sgd,
         metrics=['accuracy']
+        )
+        
+# predict class in ML model
+def predict(model, input_message, classes_list, words_list):
+    list = addiction_service.init_binary_list_with_presented_words(input_message, words_list) 
+    res = model.predict(np.array([list]))[0] 
+    error_threshold = 0.25
+
+    results = [
+        [index, error_result] for index, error_result in enumerate(res)  
+        if error_result > error_threshold
+        ] 
+
+    results.sort(key=lambda x: x[1], reverse=True) 
+    return_list = [] 
+
+    for result in results: 
+        return_list.append(
+            {
+                'intent': classes_list[result[0]], 
+                'probability': str(result[1])
+            }
         ) 
+        return return_list
+
