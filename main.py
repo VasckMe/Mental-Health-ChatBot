@@ -5,6 +5,9 @@ import services.pickle_service as pickle_service
 import services.ml_model_service as model_service
 
 # [011] Load saved intents, words, classes and ML Model
+import json
+intents = json.loads(open("dataset/intents.json", encoding='utf8').read())
+# print(intents)
 
 # [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
 
