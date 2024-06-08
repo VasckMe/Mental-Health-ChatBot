@@ -61,3 +61,7 @@ def get_response(intents_list, intents_json):
             result = random.choice(intent['responses'])   
             break
     return result 
+
+# loading ml model from file
+def load(filepath):
+    return load_model(filepath)

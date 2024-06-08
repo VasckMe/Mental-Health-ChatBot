@@ -7,15 +7,9 @@ import services.ml_model_service as model_service
 # [011] Load saved intents, words, classes and ML Model
 
 intents = json_service.read(constants.dataset_filepath)
-
-# # print(intents)
-# import pickle
-# words = pickle.load(open("saved_data/words.pkl", "rb"))
-# classes = pickle.load(open("saved_data/classes.pkl", "rb"))
-
-# from keras.models import load_model
-
-# model = load_model("saved_data/chatbotmodel.h5")
+words = pickle_service.load(constants.words_filepath, constants.extension_to_read_data_files)
+classes = pickle_service.load(constants.classes_filepath, constants.extension_to_read_data_files)
+model = model_service.load(constants.model_filepath)
 
 
 
