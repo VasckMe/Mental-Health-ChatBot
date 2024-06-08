@@ -12,7 +12,6 @@ classes = pickle_service.load(constants.classes_filepath, constants.extension_to
 model = model_service.load(constants.model_filepath)
 
 
-
 # [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
 
 # [015] Write function to make infinite chatting

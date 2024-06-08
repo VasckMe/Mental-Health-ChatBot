@@ -14,7 +14,7 @@
 - [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
 compiling
 - [ ] [010] Extend dataset
-- [ ] [011] Load saved intents, words, classes and ML Model
+- [x] [011] Load saved intents, words, classes and ML Model
 - [ ] [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
 - [ ] [013] Write predict function
 - [ ] [014] Write function for getting response
