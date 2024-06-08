@@ -11,15 +11,14 @@ words = pickle_service.load(constants.words_filepath, constants.extension_to_rea
 classes = pickle_service.load(constants.classes_filepath, constants.extension_to_read_data_files)
 model = model_service.load(constants.model_filepath)
 
-
-# [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
-
 # [015] Write function to make infinite chatting
 while True:
     userText = input('User: ')
-
+    # [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
     # [013] Write predict function
-
     # [014] Write function for getting response
+    predicted_class = model_service.predict(model, userText, classes, words)
+    result = model_service.get_response(predicted_class, intents)
+    print('Chatbot:', result)
 
 # [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases

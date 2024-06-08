@@ -52,9 +52,9 @@ def predict(model, input_message, classes_list, words_list):
         return return_list
 
 # get model response
-def get_response(intents_list, intents_json): 
-    tag = intents_list[0]['intent'] 
-    list_of_intents = intents_json['intents'] 
+def get_response(predicted_intent, intents_dataset): 
+    tag = predicted_intent[0]['intent'] 
+    list_of_intents = intents_dataset['intents'] 
     result = "" 
     for intent in list_of_intents: 
         if intent['tag'] == tag: 
