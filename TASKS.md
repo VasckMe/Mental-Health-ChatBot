@@ -18,7 +18,7 @@ compiling
 - [ ] [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
 - [ ] [013] Write predict function
 - [ ] [014] Write function for getting response
-- [ ] [015] Write function to make infinite chatting
+- [x] [015] Write function to make infinite chatting
 - [ ] [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
 
 > [!TIP]
