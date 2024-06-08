@@ -7,6 +7,9 @@ from keras.layers import Dense, Dropout
 from keras.models import Sequential 
 from keras.models import load_model
 
+# optimizer
+sgd = SGD(decay = 1e-6, momentum = 0.9, nesterov = True) 
+
 # create ML model instance (object)
 def create(data_x, data_y):
     model = Sequential() 
