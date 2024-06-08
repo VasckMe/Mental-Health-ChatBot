@@ -19,3 +19,11 @@ def create(data_x, data_y):
     model.add(Dropout(0.5)) 
     model.add(Dense(len(data_y[0]), activation='softmax'))  
     return model
+
+# compile model with parameters
+def compile(model):
+    model.compile(
+        loss='categorical_crossentropy', 
+		optimizer=sgd,
+        metrics=['accuracy']
+        ) 
