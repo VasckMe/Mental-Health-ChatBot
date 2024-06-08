@@ -47,3 +47,15 @@ def clean_up_sentences(sentence):
         ] 
     return sentence_words
 
+# function for converting data into numerical format
+def init_binary_list_with_presented_words(sentence, words): 
+    # separate out words from the input sentence 
+    sentence_words = clean_up_sentences(sentence) 
+    bag = [0]*len(words) 
+    for w in sentence_words: 
+        for i, word in enumerate(words): 
+            if word == w: # is word present in input?
+                bag[i] = 1 # if present, put 1 instead of 0
+  
+    # return a numpy array 
+    return np.array(bag)
