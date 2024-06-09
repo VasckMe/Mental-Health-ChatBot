@@ -7,10 +7,13 @@ Chatbot teached by small dataset intents.json and can be used from your IDE and 
 
 ## Framework requirements
 - tensorflow, keras
-- pickle, json
-- nltk, numpy
+- numpy, nltk
 
 ## Installation
+
+If you don't have python, install it:
+Windows: https://www.digitalocean.com/community/tutorials/install-python-windows-10
+macOS: https://www.dataquest.io/blog/installing-python-on-mac/
 
 ### macOS
 1. Clone repository
@@ -22,7 +25,7 @@ source myenvironment/bin/activate
 ```
 4. Install all required frameworks:
 ```
-pip3 install tensorflow, keras, pickle, json, nltk, numpy
+pip3 install tensorflow keras nltk numpy
 
 If you don't have pip3, install it with:
 
@@ -42,16 +45,31 @@ python3 model.py
 2. Open repository folder with your terminal
 3. Install all required frameworks:
 ```
-pip3 install tensorflow, keras, pickle, json, nltk, numpy
+pip install tensorflow keras nltk numpy
 ```
 4. Run model.py file:
 ```
-python3 model.py
+python model.py
 ```
 5. Run main.py file:
 ```
-python3 model.py
+python main.py
 ```
+
+## Repository descripton
+
+1. model.py - file for create, compile, fit and save our machine learning model
+2. main.py - file for running chatbot
+3. saved_data - folder with files, that contains model, words and classes files
+4. dataset - folder with our dataset
+5. services - folder with services files
+   addiction_service.py - service for any addiction useful code
+   json_service.py - service for work with json files, such as reading or writing
+   pickle_service.py - services for work with pickle framework that can save or load different files
+   ml_model_service.py - service for ML model. Here we are creating, compilint, teaching and saving our AI model
+6. variables.py - file with variables, that can be changed during program compilation
+7. constants.py - file with constants including filepaths and extensions. Data, that could no be changed
+
 
 ## Branch ruless
 ```
