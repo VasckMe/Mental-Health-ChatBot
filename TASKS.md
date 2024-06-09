@@ -8,10 +8,10 @@
 - [x] [003] Add dataset, add dependencies for frameworks, addarchitecture folders and files
 - [x] [004] Implement function to read json dataset with given dataset name
 - [x] [005] Add logic with to divide dataset text into words, classes and documents
-- [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
+- [x] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 - [x] [007] Make binary code from input dataset data
-- [ ] [008] Write code for creating instance (model) with Sequential and configure it
-- [ ] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
+- [x] [008] Write code for creating instance (model) with Sequential and configure it
+- [x] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
 compiling
 - [ ] [010] Extend dataset
 - [x] [011] Load saved intents, words, classes and ML Model
@@ -19,7 +19,7 @@ compiling
 - [x] [013] Write predict function
 - [x] [014] Write function for getting response
 - [x] [015] Write function to make infinite chatting
-- [ ] [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
+- [x] [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
 
 > [!TIP]
 > If you need to add, edit or remove task, here is the examples
