@@ -12,6 +12,8 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
 
 # [004] Implement function to read json dataset with given dataset name
+import json
+intents = json.loads(open("dataset/intents.json", encoding="utf8").read())
 
 # [005] Add logic with to divide dataset text into words, classes and documents
 
