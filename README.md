@@ -114,8 +114,6 @@ compiling
 **case 3**: you need to remove task
 **solution**: strikethrough task:
 - ~~[006] Add logic with to divide dataset text into words, classes and documents~~
-> [!CAUTION]
-> ALL CHANGES WITH THIS FILE YOU CAN MAKE ONLY FROM MH-000-Tasks-file BRANCH
 
 ## Branch ruless
 ```
