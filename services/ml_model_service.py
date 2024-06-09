@@ -51,6 +51,16 @@ def predict(model, input_message, classes_list, words_list):
         ) 
         return return_list
 
+def fit(model, data_x, data_y):
+    model.fit(
+        np.array(data_x),
+        np.array(data_y), 
+        epochs=200, # times of teaching ML model with whole data
+        batch_size=5,
+        verbose=1
+        ) 
+    return model
+
 # get model response
 def get_response(predicted_intent, intents_dataset): 
     tag = predicted_intent[0]['intent'] 
@@ -61,20 +71,9 @@ def get_response(predicted_intent, intents_dataset):
             result = random.choice(intent['responses'])   
             break
     return result 
-
 # loading ml model from file
 def load(filepath):
     return load_model(filepath)
-
-def fit(model, data_x, data_y):
-    model.fit(
-        np.array(data_x),
-        np.array(data_y), 
-        epochs=200, # times of teaching ML model with whole data
-        batch_size=5,
-        verbose=1
-        ) 
-    return model
 
 def save(model, fit_model, filepath):
     model.save(filepath, fit_model)
