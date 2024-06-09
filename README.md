@@ -56,19 +56,19 @@ python model.py
 python main.py
 ```
 
-## Repository descripton
-
-1. model.py - file for create, compile, fit and save our machine learning model
-2. main.py - file for running chatbot
-3. saved_data - folder with files, that contains model, words and classes files
-4. dataset - folder with our dataset
-5. services - folder with services files
+## Repository descripton 
+1. python_projekt_raport.pdf - project report
+2. model.py - file for create, compile, fit and save our machine learning model
+3. main.py - file for running chatbot
+4. saved_data - folder with files, that contains model, words and classes files
+5. dataset - folder with our dataset
+6. services - folder with services files
    addiction_service.py - service for any addiction useful code
    json_service.py - service for work with json files, such as reading or writing
    pickle_service.py - services for work with pickle framework that can save or load different files
    ml_model_service.py - service for ML model. Here we are creating, compilint, teaching and saving our AI model
-6. variables.py - file with variables, that can be changed during program compilation
-7. constants.py - file with constants including filepaths and extensions. Data, that could no be changed
+7. variables.py - file with variables, that can be changed during program compilation
+8. constants.py - file with constants including filepaths and extensions. Data, that could no be changed
 
 ## Tasks
 
