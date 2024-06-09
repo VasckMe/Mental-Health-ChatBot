@@ -27,6 +27,8 @@ variables.words = sorted(set(variables.words))
 
 # [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 
+pickle_service.dump(variables.words, constants.words_filepath, constants.extension_to_write_data_files)
+pickle_service.dump(variables.classes, constants.classes_filepath, constants.extension_to_write_data_files)
 # [007] Make binary code from input dataset data
 addiction_service.convert_into_binary(variables.documents)
   
