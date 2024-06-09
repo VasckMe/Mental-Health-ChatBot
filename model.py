@@ -37,6 +37,6 @@ train_x = list(variables.training[:, 0])
 train_y = list(variables.training[:, 1]) 
 
 # [008] Write code for creating instance (model) with Sequential and configure it
-
+model = model_service.create(train_x, train_y)
 # [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
 # compiling
