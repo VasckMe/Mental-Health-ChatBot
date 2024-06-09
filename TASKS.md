@@ -6,7 +6,7 @@
 - [x] [002] Write in README branch rules
 - [ ] [002a] Add in README: Installation, project information, technologies, ...
 - [x] [003] Add dataset, add dependencies for frameworks, addarchitecture folders and files
-- [ ] [004] Implement function to read json dataset with given dataset name
+- [x] [004] Implement function to read json dataset with given dataset name
 - [x] [005] Add logic with to divide dataset text into words, classes and documents
 - [ ] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 - [x] [007] Make binary code from input dataset data
