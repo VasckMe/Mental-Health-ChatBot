@@ -27,6 +27,8 @@ variables.words = sorted(set(variables.words))
 
 # [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
 
+pickle_service.dump(variables.words, constants.words_filepath, constants.extension_to_write_data_files)
+pickle_service.dump(variables.classes, constants.classes_filepath, constants.extension_to_write_data_files)
 # [007] Make binary code from input dataset data
 addiction_service.convert_into_binary(variables.documents)
   
@@ -36,5 +38,11 @@ train_y = list(variables.training[:, 1])
 
 # [008] Write code for creating instance (model) with Sequential and configure it
 
+model = model_service.create(train_x, train_y)
+
 # [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
+model_service.compile(model)
+fit_model = model_service.fit(model, train_x, train_y)
+model_service.save(model, fit_model, constants.model_filepath)
+print ("model gotów do użycia")
 # compiling

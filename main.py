@@ -19,6 +19,8 @@ while True:
     # [014] Write function for getting response
     predicted_class = model_service.predict(model, userText, classes, words)
     result = model_service.get_response(predicted_class, intents)
+    if predicted_class[0]["intent"] == "goodbye": #[016]Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
+        print('Chatbot:', result)
+        break
     print('Chatbot:', result)
-
 # [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
