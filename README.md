@@ -70,6 +70,52 @@ python main.py
 6. variables.py - file with variables, that can be changed during program compilation
 7. constants.py - file with constants including filepaths and extensions. Data, that could no be changed
 
+## Tasks
+
+> [!NOTE]
+> Here you can find tasks list
+
+- [x] [000] Create tasks list file
+- [x] [001] Write in README commit rules
+- [x] [002] Write in README branch rules
+- [x] [002a] Add in README: Installation, project information, technologies, ...
+- [x] [003] Add dataset, add dependencies for frameworks, addarchitecture folders and files
+- [x] [004] Implement function to read json dataset with given dataset name
+- [x] [005] Add logic with to divide dataset text into words, classes and documents
+- [x] [006] Write logic for saving words and classes into binary files in folder ‘saved_data’ 
+- [x] [007] Make binary code from input dataset data
+- [x] [008] Write code for creating instance (model) with Sequential and configure it
+- [x] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
+compiling
+- [ ] [010] Extend dataset
+- [x] [011] Load saved intents, words, classes and ML Model
+- [x] [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
+- [x] [013] Write predict function
+- [x] [014] Write function for getting response
+- [x] [015] Write function to make infinite chatting
+- [x] [016] Add logic to task [015] that can interrupt program in 'bye', 'goodbye' etc. cases
+
+> [!TIP]
+> If you need to add, edit or remove task, here are the examples
+
+**case 0**: you need to mark task as finished
+**solution**: please, add 'x' into [ ]: 
+- [ ] not finished task
+- [x] completed task
+
+**case 1**: you need to add task in 006 place
+**solution**: please, write [006a] code for it
+
+**case 2**: you need to change task
+**solution**: strikethrough previous task and write new with the same code:
+- ~~[006] Add logic with to divide dataset text into words, classes and documents~~
+- [006] Make refactoring
+
+**case 3**: you need to remove task
+**solution**: strikethrough task:
+- ~~[006] Add logic with to divide dataset text into words, classes and documents~~
+> [!CAUTION]
+> ALL CHANGES WITH THIS FILE YOU CAN MAKE ONLY FROM MH-000-Tasks-file BRANCH
 
 ## Branch ruless
 ```
@@ -81,6 +127,7 @@ python main.py
 3. If you finish task, make Pull Request into develop branch (Optional)
 4. If develop has updates, merge it into your branch. Your branch should be up to date with develop!
 ```
+
 ## Commit rules
 ```
 1. Commit title is necessary to fill
