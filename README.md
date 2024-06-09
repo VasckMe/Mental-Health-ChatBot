@@ -1,5 +1,18 @@
 # Mental-Health-ChatBot
 
+This repository contains simple chatbot for mental health chatting.
+Chatbot teached by small dataset intents.json and can be used from your IDE and terminal.
+
+
+
+## Requirements
+- tensorflow
+- keras
+- pickle
+- json
+- nltk
+- numpy
+
 ## Branch rules
 ```
 1. Don't remove "main" or "develop" branches
