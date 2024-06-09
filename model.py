@@ -1,7 +1,7 @@
 # required modules 
 import random 
 import numpy as np 
-import constants
+import constants 
 import variables
 import services.json_service as json_service
 import services.addiction_service as addiction_service
@@ -12,6 +12,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
 
 # [004] Implement function to read json dataset with given dataset name
+intents = json_service.read(constants.dataset_filepath)
 
 # [005] Add logic with to divide dataset text into words, classes and documents
 
