@@ -3,13 +3,11 @@
 This repository contains simple chatbot for mental health chatting.
 Chatbot teached by small dataset intents.json and can be used from your IDE and terminal.
 
+![Screen Recording 2024-06-09 at 5 19 50 PM](https://github.com/VasckMe/Mental-Health-ChatBot/assets/110229952/0ca583b7-0e93-4043-a87e-01913a1fefe8)
 
-
-## Requirements
-- tensorflow
-- keras
-- pickle
-- json
+## Framework requirements
+- tensorflow, keras
+- pickle, json
 - nltk
 - numpy
 
