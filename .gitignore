@@ -9,7 +9,7 @@ __pycache__/
 # Environments
 environment/
 .vscode/
-saved_data/*
+# saved_data/*
 # Distribution / packaging
 .Python
 build/
