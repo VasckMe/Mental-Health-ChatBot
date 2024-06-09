@@ -87,7 +87,7 @@ python main.py
 - [x] [008] Write code for creating instance (model) with Sequential and configure it
 - [x] [009] Compile and save ML Model. Add print in the end of the code to show the end of the 
 compiling
-- [ ] [010] Extend dataset
+- [x] [010] Extend dataset
 - [x] [011] Load saved intents, words, classes and ML Model
 - [x] [012] Write function to clean up sentences and function for checking, if word is present in input and return array with '0' and '1'
 - [x] [013] Write predict function
