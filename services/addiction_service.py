@@ -3,6 +3,8 @@ import variables
 import nltk 
 import numpy as np 
 import random
+nltk.download('punkt')
+nltk.download('wordnet')
 
 def fillListsWithData(data_list):
     for intent in data_list['intents']: 

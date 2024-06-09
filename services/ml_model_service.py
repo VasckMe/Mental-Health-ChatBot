@@ -65,3 +65,16 @@ def get_response(predicted_intent, intents_dataset):
 # loading ml model from file
 def load(filepath):
     return load_model(filepath)
+
+def fit(model, data_x, data_y):
+    model.fit(
+        np.array(data_x),
+        np.array(data_y), 
+        epochs=200, # times of teaching ML model with whole data
+        batch_size=5,
+        verbose=1
+        ) 
+    return model
+
+def save(model, fit_model, filepath):
+    model.save(filepath, fit_model)
