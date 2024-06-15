@@ -1,0 +1,649 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hey", "Is anyone there?", "Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+        "responses": [
+          "Hello there. Tell me how are you feeling today?",
+          "Hi there. What brings you here today?",
+          "Hi there. How are you feeling today?",
+          "Great to see you. How do you feel currently?",
+          "Hello there. Glad to see you're back. What's going on in your world right now?",
+          "Hey! How can I assist you today?",
+          "Hi! How are things going for you?",
+          "Hello! How's your day so far?"
+        ]
+      },
+      {
+        "tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": [
+          "Good morning! I hope you had a good night's sleep. How are you feeling today?",
+          "Good morning! What are your plans for today?",
+          "Morning! How did you sleep?"
+        ]
+      },
+      {
+        "tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": [
+          "Good afternoon! How is your day going?",
+          "Good afternoon! How are things with you today?",
+          "Afternoon! What's been happening today?"
+        ]
+      },
+      {
+        "tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": [
+          "Good evening! How has your day been?",
+          "Good evening! How do you feel right now?",
+          "Evening! How was your day?"
+        ]
+      },
+      {
+        "tag": "night",
+        "patterns": ["Good night"],
+        "responses": [
+          "Good night. Get some proper sleep.",
+          "Good night. Sweet dreams.",
+          "Night! Sleep well and take care."
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+        "responses": [
+          "See you later.",
+          "Have a nice day.",
+          "Bye! Come back again.",
+          "I'll see you soon.",
+          "Goodbye! Take care."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Thank you very much"],
+        "responses": [
+          "Happy to help!",
+          "Any time!",
+          "My pleasure.",
+          "You're most welcome!",
+          "Glad I could help!"
+        ]
+      },
+      {
+        "tag": "no-response",
+        "patterns": [""],
+        "responses": [
+          "Sorry, I didn't understand you.",
+          "Please go on.",
+          "Not sure I understand that.",
+          "Please don't hesitate to talk to me.",
+          "Could you clarify what you mean?"
+        ]
+      },
+      {
+        "tag": "neutral-response",
+        "patterns": ["nothing much"],
+        "responses": [
+          "Oh, I see. Do you want to talk about something?",
+          "Alright, would you like to discuss something specific?",
+          "Is there anything on your mind?"
+        ]
+      },
+      {
+        "tag": "about",
+        "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself"],
+        "responses": [
+          "I'm Pandora, your Personal Therapeutic AI Assistant. How are you feeling today?",
+          "I'm Pandora, a Therapeutic AI Assistant designed to assist you. Tell me about yourself.",
+          "I'm Pandora. I am a conversational agent designed to mimic a therapist. So how are you feeling today?",
+          "You can call me Pandora.",
+          "I'm Pandora! How can I assist you today?",
+          "Call me Pandora. What's on your mind?"
+        ]
+      },
+      {
+        "tag": "skill",
+        "patterns": ["What can you do?"],
+        "responses": [
+          "I can provide general advice regarding anxiety and depression, answer questions related to mental health, and make daily conversations. Do not consider me as a substitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me.",
+          "I can chat with you about your feelings, provide tips on managing stress and anxiety, and help you navigate your mental health. Remember, I'm here to support you but not replace professional help."
+        ]
+      },
+      {
+        "tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": [
+          "I was created by a team of developers and mental health experts.",
+          "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques.",
+          "The real question is: Who created you?",
+          "I am the result of extensive research and development in AI and mental health."
+        ]
+      },
+      {
+        "tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": [
+          "Oh, nice to meet you. Tell me, how was your week?",
+          "Nice to meet you. So tell me, how do you feel today?",
+          "That's a great name. Tell me more about yourself.",
+          "It's a pleasure to meet you. How are you feeling?"
+        ]
+      },
+      {
+        "tag": "help",
+        "patterns": ["Could you help me?", "Give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+        "responses": [
+          "Sure. Tell me, how can I assist you?",
+          "Tell me your problem so that I can assist you.",
+          "Yes, sure. How can I help you?",
+          "I'm here to help. What's going on?"
+        ]
+      },
+      {
+        "tag": "sad",
+        "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone"],
+        "responses": [
+          "I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me, why do you think you're feeling this way?",
+          "I'm here for you. Could you tell me why you're feeling this way?",
+          "Why do you think you feel this way?",
+          "How long have you been feeling this way?",
+          "It's tough feeling lonely. Let's talk about what's been going on."
+        ]
+      },
+      {
+        "tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": [
+          "What do you think is causing this?",
+          "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated.",
+          "Give yourself a break. Go easy on yourself.",
+          "I am sorry to hear that. What is the reason behind this?",
+          "It sounds like you're under a lot of pressure. What can we do to alleviate some of it?"
+        ]
+      },
+      {
+        "tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": [
+          "It's only natural to feel this way. Tell me more. What else is on your mind?",
+          "Let's discuss further why you're feeling this way.",
+          "I first want to let you know that you are not alone in your feelings, and there is always someone there to help. You can always change your feelings and change your way of thinking by being open to trying to change.",
+          "I want to let you know that you are not alone in your feelings, and there is always someone there to help. You can change your feelings and your way of thinking by being open to trying to change."
+        ]
+      },
+      {
+        "tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think I'm depressed.", "I have depression"],
+        "responses": [
+          "It helps to talk about what's happening. You're going to be okay.",
+          "Talk to me. Tell me more. It helps if you open up to someone.",
+          "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal.",
+          "Depression is tough, but you're not alone. Let's work through this together."
+        ]
+      },
+      {
+        "tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "Cheerful", "I'm fine", "I feel okay"],
+        "responses": [
+          "That's great to hear. I'm glad you're feeling this way.",
+          "Oh, I see. That's great.",
+          "Did something happen which made you feel this way?",
+          "I'm happy that you're happy! What's contributing to this good mood?"
+        ]
+      },
+      {
+        "tag": "anxious",
+        "patterns": ["I'm anxious", "I have anxiety", "I'm so anxious", "I am so nervous", "I feel nervous"],
+        "responses": [
+          "I understand. Anxiety can be overwhelming. Do you want to talk about what's making you feel this way?",
+          "It sounds like you're dealing with a lot of stress. Let's talk about it.",
+          "Anxiety is tough to deal with. What do you think is causing it?",
+          "It's okay to feel anxious. What can we do to help you feel better?",
+          "Would you like to try some breathing exercises to calm down?"
+        ]
+      },
+      {
+        "tag": "angry",
+        "patterns": ["I'm so angry", "I am mad", "I feel angry", "I'm furious"],
+        "responses": [
+          "It's okay to feel angry sometimes. What's making you feel this way?",
+          "Tell me what's on your mind. Why are you feeling this way?",
+          "Anger is a natural emotion. Let's work through this together.",
+          "What do you think triggered this anger?"
+        ]
+      },
+      {
+        "tag": "confused",
+        "patterns": ["I'm so confused", "I don't understand", "I'm lost", "I'm so puzzled"],
+        "responses": [
+          "Let's try to figure this out together. What's causing your confusion?",
+          "It's okay to feel confused. Can you tell me more about what's bothering you?",
+          "Let's break this down. What exactly is confusing you?",
+          "I'm here to help. Let's talk through your confusion."
+        ]
+      },
+      {
+        "tag": "alone",
+        "patterns": ["I feel so alone", "I'm so lonely", "I don't have anyone", "I feel abandoned"],
+        "responses": [
+          "Loneliness can be really tough. I'm here with you. Want to talk about it?",
+          "You're not alone. I'm here to listen. What's been going on?",
+          "It can be really hard to feel alone. Let's talk about how you're feeling.",
+          "You have me here to talk to. What's been on your mind?"
+        ]
+      },
+      {
+        "tag": "fear",
+        "patterns": ["I'm scared", "I have fear", "I'm afraid", "I feel terrified"],
+        "responses": [
+          "Fear is a very strong emotion. Can you share more about what's causing it?",
+          "It's okay to feel scared. Do you want to talk about what's making you feel this way?",
+          "Fear can be overwhelming. Let's discuss it further. What's on your mind?",
+          "I'm here to support you. What specifically are you afraid of?"
+        ]
+      },
+      {
+        "tag": "relationship_issues",
+        "patterns": ["I have relationship problems", "I'm having issues with my partner", "Relationship troubles", "My relationship is falling apart"],
+        "responses": [
+          "Relationship issues can be very challenging. Can you tell me more about what's been happening?",
+          "I'm sorry to hear about your relationship troubles. How long have you been feeling this way?",
+          "It's important to address relationship issues. Let's talk about what's been going on.",
+          "I'm here to listen. What specific issues are you facing in your relationship?"
+        ]
+      },
+      {
+        "tag": "panic_attack",
+        "patterns": ["I'm having a panic attack", "I can't breathe", "I'm panicking", "Help me, I'm having a panic attack"],
+        "responses": [
+          "Try to take deep, slow breaths. In through your nose, out through your mouth. I'm here with you.",
+          "Focus on your breathing. You're safe right now. Tell me more about what you're experiencing.",
+          "Panic attacks can be very scary. Let's try to calm down together. How can I help?",
+          "It's okay, I'm here for you. Can you describe what you're feeling right now?"
+        ]
+      },
+      {
+        "tag": "self_esteem",
+        "patterns": ["I have low self-esteem", "I don't feel good about myself", "I have self-worth issues", "I'm struggling with my self-esteem"],
+        "responses": [
+          "Self-esteem issues can be very challenging. Can you tell me more about how you're feeling?",
+          "Let's talk about why you might be feeling this way. What specifically is bothering you?",
+          "It's important to build a positive self-image. What do you think is contributing to your low self-esteem?",
+          "I'm here to support you. Can you share more about your experiences with self-esteem?"
+        ]
+      },
+      {
+        "tag": "isolation",
+        "patterns": ["I feel isolated", "I'm so isolated", "I feel cut off from everyone", "I'm completely alone"],
+        "responses": [
+          "Isolation can be very tough to deal with. Do you want to talk more about why you're feeling this way?",
+          "Feeling isolated is hard. What do you think is causing this feeling?",
+          "I'm here to listen. What's been making you feel isolated?",
+          "It's okay to feel isolated sometimes. Let's discuss how we can address this."
+        ]
+      },
+      {
+        "tag": "disappointment",
+        "patterns": ["I feel disappointed", "I'm so disappointed", "I can't shake off this disappointment", "I'm feeling let down"],
+        "responses": [
+          "Disappointment can be very disheartening. Can you tell me more about what's causing this feeling?",
+          "It's okay to feel disappointed. Let's talk about it. What happened?",
+          "I'm here for you. Can you share more about why you're feeling disappointed?",
+          "Let's discuss your feelings of disappointment. What specifically let you down?"
+        ]
+      },
+      {
+        "tag": "boredom",
+        "patterns": ["I'm bored", "I feel so bored", "I'm really bored", "Nothing excites me"],
+        "responses": [
+          "Boredom can be tough. What activities do you usually enjoy?",
+          "Let's find something interesting for you to do. What are some of your hobbies?",
+          "It's okay to feel bored sometimes. What would you like to talk about?",
+          "Let's discuss what might make your day more exciting. Any interests you want to explore?"
+        ]
+      },
+      {
+        "tag": "achievement",
+        "patterns": ["I accomplished my goal", "I achieved something great", "I'm proud of my achievement", "I did something amazing"],
+        "responses": [
+          "That's fantastic! Congratulations on your achievement! How do you feel about it?",
+          "Great job! Tell me more about what you accomplished.",
+          "That's wonderful news! What was the most challenging part for you?",
+          "I'm so happy for you! How did you manage to achieve your goal?"
+        ]
+      },
+      {
+        "tag": "grief",
+        "patterns": ["I'm grieving", "I lost someone close to me", "I'm dealing with loss", "I'm heartbroken"],
+        "responses": [
+          "I'm so sorry for your loss. Grieving is a very personal process. How are you feeling right now?",
+          "Loss can be incredibly hard to cope with. Do you want to talk about your loved one?",
+          "It's important to give yourself time to grieve. Can you share more about your feelings?",
+          "I'm here to support you through this tough time. What memories do you have of your loved one?"
+        ]
+      },
+      {
+        "tag": "hope",
+        "patterns": ["I feel hopeful", "I'm feeling positive about the future", "I have hope", "I'm optimistic"],
+        "responses": [
+          "That's wonderful to hear! What are you feeling hopeful about?",
+          "It's great to feel hopeful. What positive changes are you looking forward to?",
+          "Hope is a powerful feeling. What's inspiring this optimism in you?",
+          "I'm glad you're feeling hopeful. What are your plans moving forward?"
+        ]
+      },
+      {
+        "tag": "diet",
+        "patterns": ["I need help with my diet", "How can I eat healthier?", "I'm struggling with my diet", "Healthy eating tips"],
+        "responses": [
+          "Healthy eating is important for overall well-being. What specific dietary concerns do you have?",
+          "I can help with that. What are your current eating habits like?",
+          "Let's discuss some healthy eating tips. What changes are you looking to make?",
+          "Eating healthy can have a big impact on your mental and physical health. What do you need help with?"
+        ]
+      },
+      {
+        "tag": "sleep",
+        "patterns": ["I can't sleep", "I'm having trouble sleeping", "I have insomnia", "Help me with my sleep"],
+        "responses": [
+          "Sleep issues can be very frustrating. What do you think is causing your trouble sleeping?",
+          "Let's talk about your sleep routine. What does your typical night look like?",
+          "Insomnia can be tough to deal with. Have you tried any relaxation techniques before bed?",
+          "Getting a good night's sleep is important. Let's figure out how to improve your sleep habits."
+        ]
+      },
+      {
+        "tag": "exercise",
+        "patterns": ["I need help with exercise", "How can I stay fit?", "I'm struggling to exercise", "Fitness tips"],
+        "responses": [
+          "Regular exercise is great for mental health. What types of exercise do you enjoy?",
+          "Let's talk about your fitness goals. What do you want to achieve?",
+          "Exercise can be challenging to maintain. What barriers are you facing?",
+          "Staying fit is important. How often do you currently exercise?"
+        ]
+      },
+      {
+        "tag": "focus",
+        "patterns": ["I can't focus", "Help me with concentration", "I'm struggling to concentrate", "Focus tips"],
+        "responses": [
+          "Focus issues can be very distracting. What do you think is causing your lack of concentration?",
+          "Let's talk about your daily routine. What distractions do you face?",
+          "Improving focus can take time. What techniques have you tried so far?",
+          "Concentration is key to productivity. How can we create a better environment for you?"
+        ]
+      },
+      {
+        "tag": "trust",
+        "patterns": ["I have trust issues", "I can't trust anyone", "I'm struggling with trust", "How can I build trust?"],
+        "responses": [
+          "Trust issues can be very challenging. Can you tell me more about your experiences?",
+          "Building trust takes time. What has made it difficult for you to trust others?",
+          "Let's talk about your trust issues. What specific incidents are on your mind?",
+          "I'm here to listen. How do you think you can start building trust?"
+        ]
+      },
+      {
+        "tag": "meditation",
+        "patterns": ["Tell me about meditation", "How can I meditate?", "Benefits of meditation", "I want to practice meditation"],
+        "responses": [
+          "Meditation can be very beneficial for mental health. Would you like some tips on how to get started?",
+          "I can help you learn about meditation. What would you like to know?",
+          "Meditation can be great for reducing stress. Do you want to learn more about it?",
+          "Let's talk about how meditation can help. What are you hoping to achieve?"
+        ]
+      },
+      {
+        "tag": "creativity",
+        "patterns": ["I need help with creativity", "How can I be more creative?", "I'm struggling with creativity", "Creative thinking tips"],
+        "responses": [
+          "Creativity can be nurtured in many ways. What areas do you want to improve?",
+          "Let's discuss some techniques to boost creativity. What creative activities do you enjoy?",
+          "Struggling with creativity can be frustrating. What do you think is blocking you?",
+          "I'm here to help. How can we unlock your creative potential?"
+        ]
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["I lack motivation", "Help me get motivated", "I'm struggling with motivation", "Motivational tips"],
+        "responses": [
+          "Lack of motivation can be tough. What do you usually enjoy doing?",
+          "Let's talk about what's causing this lack of motivation. What are your goals?",
+          "Staying motivated can be challenging. What techniques have you tried?",
+          "I'm here to support you. How can we boost your motivation together?"
+        ]
+      },
+      {
+        "tag": "future",
+        "patterns": ["I'm worried about the future", "I fear the future", "I'm anxious about my future", "Future concerns"],
+        "responses": [
+          "The future can be uncertain and scary. What specific concerns do you have?",
+          "It's okay to feel anxious about the future. Let's talk about what worries you.",
+          "Future concerns are natural. What can we do to help you feel more prepared?",
+          "Let's discuss your future plans. How can we address your concerns together?"
+        ]
+      },
+      {
+        "tag": "self-care",
+        "patterns": ["I need self-care tips", "How can I take better care of myself?", "I'm struggling with self-care", "Self-care advice"],
+        "responses": [
+          "Self-care is very important. What aspects of self-care do you want to improve?",
+          "Let's talk about your self-care routine. What do you currently do for self-care?",
+          "Struggling with self-care can affect your well-being. What changes are you looking to make?",
+          "I'm here to help. How can we enhance your self-care practices?"
+        ]
+      },
+      {
+        "tag": "procrastination",
+        "patterns": ["I keep procrastinating", "I can't stop procrastinating", "I'm struggling with procrastination", "How can I stop procrastinating?"],
+        "responses": [
+          "Procrastination can be tough to overcome. What tasks are you putting off?",
+          "Let's talk about your procrastination habits. What usually triggers it?",
+          "It's common to struggle with procrastination. What helps you stay focused?",
+          "I'm here to help. What steps can we take to manage your procrastination?"
+        ]
+      },
+      {
+        "tag": "burnout",
+        "patterns": ["I feel burnt out", "I'm experiencing burnout", "I'm exhausted", "I can't keep up with my work"],
+        "responses": [
+          "Burnout is a serious issue. Can you tell me more about your workload?",
+          "It's important to address burnout. What aspects of your work are most exhausting?",
+          "Burnout can affect both your mental and physical health. What support do you need?",
+          "I'm here to listen. How long have you been feeling this way?"
+        ]
+      },
+      {
+        "tag": "family_issues",
+        "patterns": ["I have family problems", "My family is causing me stress", "I'm struggling with family issues", "Family conflicts"],
+        "responses": [
+          "Family issues can be very stressful. Can you share more about what's happening?",
+          "It's hard to deal with family conflicts. What specific problems are you facing?",
+          "I'm here to support you. How can we work through these family issues together?",
+          "Let's talk about your family situation. What are the main sources of stress?"
+        ]
+      },
+      {
+        "tag": "financial_stress",
+        "patterns": ["I'm stressed about money", "I have financial problems", "Money issues are affecting me", "I can't manage my finances"],
+        "responses": [
+          "Financial stress can be overwhelming. What specific concerns do you have?",
+          "Let's talk about your financial situation. What steps have you taken so far?",
+          "Managing finances can be challenging. What areas do you need help with?",
+          "I'm here to listen. How can we address your financial stress together?"
+        ]
+      },
+      {
+        "tag": "body_image",
+        "patterns": ["I don't like my body", "I'm struggling with body image", "I feel bad about how I look", "Body image issues"],
+        "responses": [
+          "Body image issues can be very challenging. How long have you felt this way?",
+          "It's important to have a positive self-image. What specifically bothers you about your body?",
+          "I'm here to support you. What can we do to improve your body image?",
+          "Let's talk about your feelings. What experiences have influenced your body image?"
+        ]
+      },
+      {
+        "tag": "social_anxiety",
+        "patterns": ["I have social anxiety", "I'm scared of social situations", "I feel anxious around people", "Social anxiety issues"],
+        "responses": [
+          "Social anxiety can be very challenging. What situations make you most anxious?",
+          "It's okay to feel anxious in social settings. What do you find most difficult?",
+          "I'm here to help. What strategies have you tried to cope with social anxiety?",
+          "Let's talk about your experiences with social anxiety. What support do you need?"
+        ]
+      },
+      {
+        "tag": "addiction",
+        "patterns": ["I'm struggling with addiction", "I can't stop my addiction", "I need help with addiction", "Addiction problems"],
+        "responses": [
+          "Addiction is a serious issue. Can you tell me more about what you're experiencing?",
+          "It's important to seek help for addiction. What steps have you taken so far?",
+          "I'm here to support you. How can we work together to address your addiction?",
+          "Let's talk about your addiction. What are the main challenges you're facing?"
+        ]
+      },
+      {
+        "tag": "study_stress",
+        "patterns": ["I'm stressed about studying", "I can't keep up with my studies", "Study stress is affecting me", "I need help with study stress"],
+        "responses": [
+          "Study stress can be very overwhelming. What subjects are you struggling with?",
+          "Let's talk about your study habits. What usually causes you the most stress?",
+          "It's important to manage study stress effectively. What techniques have you tried?",
+          "I'm here to help. How can we improve your study routine?"
+        ]
+      },
+      {
+        "tag": "future_plans",
+        "patterns": ["I don't know what to do in the future", "I'm uncertain about my future", "Future plans are stressing me", "I need help with my future plans"],
+        "responses": [
+          "Future planning can be very stressful. What are your main concerns?",
+          "It's okay to feel uncertain about the future. What are your interests and goals?",
+          "I'm here to support you. How can we work together to plan your future?",
+          "Let's talk about your future plans. What steps have you considered so far?"
+        ]
+      },
+      {
+        "tag": "positive_mindset",
+        "patterns": ["I want to be more positive", "How can I develop a positive mindset?", "I'm trying to stay positive", "Positive thinking tips"],
+        "responses": [
+          "Developing a positive mindset can greatly improve your well-being. What helps you stay positive?",
+          "Let's talk about how to cultivate positivity. What challenges are you facing?",
+          "I'm here to help. What techniques have you tried to develop a positive mindset?",
+          "Positive thinking can be very powerful. What areas of your life do you want to improve?"
+        ]
+      },
+      {
+        "tag": "work_life_balance",
+        "patterns": ["I need better work-life balance", "My work-life balance is off", "I'm struggling with work-life balance", "How can I improve my work-life balance?"],
+        "responses": [
+          "Achieving a good work-life balance is important. What areas do you find most challenging?",
+          "Let's discuss your current work-life balance. What changes are you hoping to make?",
+          "It's important to have a balance between work and personal life. What support do you need?",
+          "I'm here to help. How can we improve your work-life balance together?"
+        ]
+      },
+      {
+        "tag": "personal_growth",
+        "patterns": ["I want to grow personally", "How can I achieve personal growth?", "I'm focused on self-improvement", "Personal growth tips"],
+        "responses": [
+          "Personal growth is a continuous journey. What areas are you focusing on?",
+          "Let's talk about your goals for personal growth. What steps have you taken so far?",
+          "It's great that you're focused on self-improvement. What resources do you need?",
+          "I'm here to support you. How can we work together on your personal growth?"
+        ]
+      },
+      {
+        "tag": "fear_of_failure",
+        "patterns": ["I'm afraid of failing", "Fear of failure is holding me back", "I can't overcome my fear of failure", "How can I deal with fear of failure?"],
+        "responses": [
+          "Fear of failure can be very paralyzing. What specific fears are you facing?",
+          "It's okay to fear failure. Let's talk about how to overcome it. What are your goals?",
+          "I'm here to help. What steps have you tried to manage your fear of failure?",
+          "Let's discuss your fear of failure. What support do you need to move forward?"
+        ]
+      },
+      {
+        "tag": "making_friends",
+        "patterns": ["I have trouble making friends", "How can I make new friends?", "I'm struggling with making friends", "Friendship tips"],
+        "responses": [
+          "Making friends can be challenging. What do you find most difficult?",
+          "Let's talk about your experiences with making friends. What has worked for you in the past?",
+          "It's important to build meaningful connections. What activities do you enjoy?",
+          "I'm here to support you. How can we improve your social skills together?"
+        ]
+      },
+      {
+        "tag": "empathy",
+        "patterns": ["I want to be more empathetic", "How can I develop empathy?", "I'm trying to understand others better", "Empathy development tips"],
+        "responses": [
+          "Empathy is a key part of building strong relationships. What areas do you want to improve?",
+          "Let's talk about how to develop empathy. What challenges are you facing?",
+          "I'm here to help. What techniques have you tried to understand others better?",
+          "Developing empathy can greatly improve your interactions. What support do you need?"
+        ]
+      },
+      {
+        "tag": "expressing_emotions",
+        "patterns": ["I have trouble expressing my emotions", "How can I express my feelings better?", "I'm struggling to share my emotions", "Expressing emotions tips"],
+        "responses": [
+          "Expressing emotions can be challenging. What do you find most difficult?",
+          "Let's talk about your experiences with sharing emotions. What has worked for you in the past?",
+          "It's important to express your feelings. What techniques have you tried?",
+          "I'm here to support you. How can we improve your emotional expression together?"
+        ]
+      },
+      {
+        "tag": "coping_mechanisms",
+        "patterns": ["I need better coping mechanisms", "How can I cope with stress?", "I'm struggling to cope with my emotions", "Coping strategies"],
+        "responses": [
+          "Developing good coping mechanisms is crucial. What stressors are you dealing with?",
+          "Let's talk about your current coping strategies. What works for you?",
+          "It's important to find healthy ways to cope. What techniques have you tried?",
+          "I'm here to help. How can we develop better coping mechanisms together?"
+        ]
+      },
+      {
+        "tag": "assertiveness",
+        "patterns": ["I want to be more assertive", "How can I develop assertiveness?", "I'm struggling with being assertive", "Assertiveness tips"],
+        "responses": [
+          "Being assertive is important for setting boundaries. What areas do you want to improve?",
+          "Let's talk about how to develop assertiveness. What challenges are you facing?",
+          "I'm here to help. What techniques have you tried to be more assertive?",
+          "Developing assertiveness can greatly improve your interactions. What support do you need?"
+        ]
+      },
+      {
+        "tag": "life_purpose",
+        "patterns": ["I feel like I have no purpose", "How can I find my life purpose?", "I'm searching for meaning", "Life purpose tips"],
+        "responses": [
+          "Finding your life purpose can be a profound journey. What interests and passions do you have?",
+          "Let's talk about your search for meaning. What activities make you feel fulfilled?",
+          "It's important to have a sense of purpose. What steps have you taken to explore your interests?",
+          "I'm here to support you. How can we work together to find your life purpose?"
+        ]
+      },
+      {
+        "tag": "forgiveness",
+        "patterns": ["I can't forgive myself", "How can I forgive others?", "I'm struggling with forgiveness", "Forgiveness tips"],
+        "responses": [
+          "Forgiveness can be a difficult process. What specific issues are you dealing with?",
+          "Let's talk about your experiences with forgiveness. What has been the hardest part?",
+          "It's important to find a way to forgive. What techniques have you tried?",
+          "I'm here to help. How can we work through your forgiveness struggles together?"
+        ]
+      },
+      {
+        "tag": "change",
+        "patterns": ["I'm scared of change", "How can I cope with change?", "I'm struggling with changes in my life", "Change management tips"],
+        "responses": [
+          "Change can be very unsettling. What specific changes are you facing?",
+          "Let's talk about how to cope with change. What strategies have you tried?",
+          "It's important to adapt to change. What support do you need during this transition?",
+          "I'm here to help. How can we manage the changes in your life together?"
+        ]
+      }
+    ]
+}  
