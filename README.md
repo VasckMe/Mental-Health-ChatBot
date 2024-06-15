@@ -115,7 +115,7 @@ compiling
 **solution**: strikethrough task:
 - ~~[006] Add logic with to divide dataset text into words, classes and documents~~
 
-## Branch ruless
+## Branch rules
 ```
 1. Don't remove "main" or "develop" branches
 2. Branch title must has:
